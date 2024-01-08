@@ -1,43 +1,103 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Sharon's blog</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <title>Sharon's Portfolio</title>
 </head>
-
 <body>
-    <div class="container">
-        <header>
-          <h1><HOME</h1>
-        </header>
-        <div class="colored-bar">
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="projects.html">Projects</a>
-                <a href="extra.html">Visual Portfolio</a>
-            </nav>
-        </div>
-
     <header>
-        <br>
-        <h3>Hello! I'm Sharon Sethi, a dedicated and ambitious college student with a passion for 
-            Robotics and AI. I thrive in dynamic environments 
-            and am constantly seeking opportunities to broaden my knowledge and skills. </em></h3>
-        <br>
+        <div class="btn">
+            
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger">
+            </span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a>
+                <li class="nav__item"><a href="#about" class="nav__link">About</a>
+                <li class="nav__item"><a href="#" class="nav__link">Contact</a>    
+            </ul>
+        </nav>
+            
     </header>
-    <div class="colored_about_bar">
-        <h1>
-            About
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hi, I am <strong>Sharon Sethi</strong>
         </h1>
-        <h3>
-            I am a 20 year old, 3rd year college student pursuing Robotics and AI Engineering at KMITL in Bangkok, Thailand.
-            I am a Thai citizen and I am fluent in English, Thai and Hindi. This blog 
-        </h3>
-        <div class="me">
-            <div class="profile">
-                <img src="assets/images/profile.jpg" alt="Image 5">
-            </div>
-          </body>
-</html>
+        <p class="section__sub section__sub--intro">
+            Robotics and AI Engineering student
+        </p>
+        <img src="assets/images/profile-icon.jpg" alt="profile" class="intro__img">
+    </section>
 
+    <section class="me" id="about">
+        <h3 class="section__title section__title--about">
+            <h2 class="who">Who am I</h2>
+            <ul class="points">
+                <li>Thai national</li>
+                <li>A third year university student</li>
+                <li>Currently studying at KMITL</li>
+
+            </ul>
+        </h3>
+        <div class="descrip">
+            <h2>What I do</h2>
+            <div class="col">
+                <h3>Data Science and Analysis</h3>
+                <p>Developed a web application that performs data analysis from the chosen dataset using R Studio.</p>
+            </div>
+            <div class="col">
+                <h3>Front-end development</h3>
+                <p>Proficient in HTML, CSS, React.js, and JavaScript to construct websites, 
+                    with practical experience applying HTML and CSS in real-world scenarios.</p>
+            </div>
+            <div class="col">
+                <h3>Robotics</h3>
+                <p>Hands on experience in programming robots including Turtlebot2, Turtlebot3, Tello drones
+                   and operating cutting edge technologies such as Magic Leaper, Hololens and AR/VR.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="pictures" id="ventures">
+        <h2 class="section__title section__title--ventures"></h2>
+            <h2 class="ven">Recent Ventures</h2>
+            <div class="portfolio">
+                <a href="#" class="portfolio__item">
+                    <img src="assets/images/robo.jpg" class="portfolio__img">
+                </a>
+                <a href="#" class="portfolio__item">
+                    <img src="assets/images/tokai.jpg" class="portfolio__img">
+                </a>
+            </div>
+    </section>
+
+    <footer>
+        <h2>Let's Connect</h2>
+        <p><strong>email:</strong> sharonsethi25@gmail.com</p>
+        <ul class="social">
+            <li class="social__item" >
+                <a class="social__link" href="https://www.linkedin.com/in/sharon-sethi-0470b8295/">
+                    <i class="fa-brands fa-linkedin"> Linkedin
+                    </i>
+                </a>
+            </li>
+            <li class="social__item">
+                <a class="social__link" href="https://github.com/sharonsara">
+                    <i class="fa-brands fa-github"> Github</i>
+                </a>
+            <li class="social__item">
+                <a class="social__link" href="https://drive.google.com/drive/folders/1LkPVGjOx3XQlu6Kcz97tW13_lbTrNs1K?usp=drive_link"> 
+                    <i class="fa-solid fa-file"> Google Drive</i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
